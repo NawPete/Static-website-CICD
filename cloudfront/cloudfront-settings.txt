@@ -1,0 +1,22 @@
+## Steps to Configure CloudFront:
+
+1. Create CloudFront Distribution:
+   - Go to the CloudFront console and click on Create Distribution.
+   - Choose Web for the delivery method.
+   - Under Origin Domain Name, select the S3 bucket where your website is hosted.
+   - Set Viewer Protocol Policy to Redirect HTTP to HTTPS.
+   - Enable Cache Behavior for static content like HTML, CSS, and JavaScript.
+
+2. Configure SSL (Optional):
+   - If you have a custom domain, request or import an SSL certificate in AWS Certificate Manager (ACM).
+   - Attach the certificate to the CloudFront distribution for HTTPS.
+
+3. Associate CloudFront with Route 53 (Optional):
+   - If using Route 53, add a CNAME or alias record pointing to your CloudFront distribution for your custom domain.
+
+4. Invalidation for Cache Updates:
+   - When you update the website in S3, invalidate the CloudFront cache to immediately reflect the changes.
+
+5. Logging and Monitoring:
+   - Enable CloudFront logging and monitoring in Amazon CloudWatch for performance insights and security.
+
