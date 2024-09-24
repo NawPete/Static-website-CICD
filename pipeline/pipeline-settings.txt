@@ -1,0 +1,27 @@
+## Steps to Set Up CodePipeline:
+
+1. Create a New Pipeline:
+   - Go to the AWS CodePipeline console and click Create Pipeline.
+   - Name your pipeline (e.g., `MyWebsitePipeline`).
+
+2. Source Stage:
+   - Select GitHub as your source.
+   - Connect your GitHub account and select the repository and branch that contains your website's source files (`index.html` and `error.html`).
+
+3. Build Stage (Optional):
+   - Since this project consists of static files, you can skip the build stage by selecting Skip build stage.
+
+4. Deploy Stage:
+   - Choose Amazon S3 as the deployment provider.
+   - Select the S3 bucket that hosts your website.
+
+5. Finalize:
+   - Review and create the pipeline. Now, any changes pushed to GitHub will trigger a pipeline execution and automatically update your website on S3.
+
+## Testing the Pipeline:
+
+1. Edit the `index.html` file in your GitHub repository.
+2. Commit the changes to the `main` branch.
+3. Check AWS CodePipeline to see the deployment process in action.
+4. Once completed, visit your website URL to see the changes live.
+
