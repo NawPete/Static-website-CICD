@@ -1,4 +1,4 @@
-# My Website with AWS (S3, CloudFront, Route 53, CI/CD)
+# Static Website with AWS (S3, CloudFront, Route 53, CI/CD)
 
 ## Project Description
 
