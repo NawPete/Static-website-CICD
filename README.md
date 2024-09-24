@@ -41,4 +41,5 @@ The goal is to create a scalable, cloud-based infrastructure with full automatio
 1. Make a change to the `index.html` file in GitHub.
 2. The change will automatically deploy to the website via the CI/CD pipeline.
 
+![Cloud Architecture](https://github.com/user-attachments/assets/685c4443-fc50-456d-9e78-0c82fa1399f5)
 
